@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>E-Commerce</title>
+        <title>E-Commerce -MenaShop-</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -16,6 +16,7 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="./css/style.css">
         
     </head>
@@ -27,76 +28,38 @@
                     <h1 class="logo">-MenaShop-</h1>
                 </header>
                 <nav>
-                    <ul>
-                        <li ><button class="boton-menu active">
-                            <i class="bi bi-hand-index-thumb"></i>Todos los productos</button>
+                    <ul class="menu">
+                        <li ><button id="todos" class="boton-menu boton-categoria active">
+                            <i class="bi bi-hand-index-thumb-fill"></i>Todos los productos</button>
                         </li>
-                        <li><button class="boton-menu">
+                        <li><button id="cascos" class="boton-menu boton-categoria">
                             <i class="bi bi-hand-index-thumb"></i>Cascos</button>
                         </li>
-                        <li><button class="boton-menu">
+                        <li><button id="camperas" class="boton-menu boton-categoria">
                             <i class="bi bi-hand-index-thumb"></i>Camperas</button>
                         </li>
-                        <li><button class="boton-menu">
+                        <li><button id="pantalones" class="boton-menu boton-categoria">
                             <i class="bi bi-hand-index-thumb"></i>Pantalones</button>
                         </li>
-                        <li><a class="boton-carrito" href="./carrito.html">
-                            <i class="bi bi-cart3"></i>Carrito <span class="numerito">0</span></a>
+                        <li><a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart3"></i>Carrito <span id="numerito" class="numerito">0</span></a>
                         </li>
                     </ul>
                 </nav>
+                <footer class="texto-footer">
+                    <p>©2024 MenaCoder</p>
+                </footer>
             </aside>
             <main>
 
-                <h2 class="titulo-principal"></h2>
-                <div class="contenedor-productos">
-                    <div class="productos">
-                        <img class="producto-imagen" src="./img/cascos/01.jpg" alt="">
-                        <div class="producto-detalles">
-                            <h3 class="producto-titulo">Casco01</h3>
-                            <p class="producto-precio">$1000</p>
-                            <button class="producto-agregar">Agregar</button>
-                        </div>
-                    </div>
-                    <div class="productos">
-                        <img class="producto-imagen" src="./img/cascos/02.jpg" alt="">
-                        <div class="producto-detalles">
-                            <h3 class="producto-titulo">Casco02</h3>
-                            <p class="producto-precio">$1000</p>
-                            <button class="producto-agregar">Agregar</button>
-                        </div>
-                    </div>
-                    <div class="productos">
-                        <img class="producto-imagen" src="./img/cascos/03.jpg" alt="">
-                        <div class="producto-detalles">
-                            <h3 class="producto-titulo">Casco03</h3>
-                            <p class="producto-precio">$1000</p>
-                            <button class="producto-agregar">Agregar</button>
-                        </div>
-                    </div>
-                    <div class="productos">
-                        <img class="producto-imagen" src="./img/cascos/04.jpg" alt="">
-                        <div class="producto-detalles">
-                            <h3 class="producto-titulo">Casco04</h3>
-                            <p class="producto-precio">$1000</p>
-                            <button class="producto-agregar">Agregar</button>
-                        </div>
-                    </div>
-                    <div class="productos">
-                        <img class="producto-imagen" src="./img/cascos/05.jpg" alt="">
-                        <div class="producto-detalles">
-                            <h3 class="producto-titulo">Casco05</h3>
-                            <p class="producto-precio">$1000</p>
-                            <button class="producto-agregar">Agregar</button>
-                        </div>
-                    </div>
-                </div>
-
+                <h2 id="titulo-principal" class="titulo-principal">Todos los productos:</h2>
+                <div id="contenedor-productos" class="contenedor-productos">
+                    
+            </div>
             </main>
+        
+        
         </div>
-        <footer>
-            <p>©MenaCoder</p>
-        </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -109,5 +72,6 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+        <script src="./js/main.js"></script>
     </body>
 </html>
