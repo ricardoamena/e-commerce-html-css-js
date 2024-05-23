@@ -231,7 +231,7 @@ function agregarAlCarrito(e) {
     }
     actualizarNumerito ();
 
-    localStorage.setItem('producto-en-carrito', JSON.stringify(productosEnCarrito));
+    localStorage.setItem('carrito', JSON.stringify(productosEnCarrito));
 }
 
 function actualizarNumerito () {
